@@ -33,9 +33,7 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise"/>
     
 
 
@@ -50,25 +48,19 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng"/>
     
 
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor"/>
     
 
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude"/>
     
 
 
@@ -82,9 +74,7 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy"/>
     
 
 
@@ -98,17 +88,13 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains"/>
     
 
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting"/>
     
 
 
@@ -122,9 +108,7 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel"/>
     
 
 
@@ -148,7 +132,6 @@
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt -->
 
     <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
         <rdfs:range rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
     </owl:AnnotationProperty>
     
@@ -156,9 +139,7 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy"/>
     
 
 
@@ -172,9 +153,7 @@
 
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy -->
 
-    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy"/>
     
 
 
@@ -199,7 +178,6 @@
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight -->
 
     <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight">
-        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:AnnotationProperty>
     
@@ -609,6 +587,7 @@
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting -->
 
     <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
         <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
     </owl:ObjectProperty>
     
@@ -2624,11 +2603,11 @@
 
     <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới_với_đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ">
         <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad"/>
-        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
-        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
         <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới"/>
         <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ"/>
         <rdfs:label>tách biệt giữa đường dành riêng cho các loại phương tiện cơ giới với đường dành riêng cho các phương tiện thô sơ và người đi bộ</rdfs:label>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
     </owl:NamedIndividual>
     
 
@@ -2672,6 +2651,7 @@
     <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn -->
 
     <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vạch sơn</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2994,11 +2974,11 @@
         <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
         <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường"/>
         <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường"/>
-        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu"/>
-        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
         <specification>dành riêng cho một hoặc một vài loại phương tiện được lưu 
 thông</specification>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường dành riêng cho một số loại phương tiện</rdfs:label>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu"/>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
     </owl:NamedIndividual>
     
 
@@ -3498,10 +3478,10 @@ các phương tiện giao thông đến từ hướng khác nhường đường 
         <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
     </rdf:Description>
     <rdf:Description>
-        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện"/>
+        <prescribedAt rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
     </rdf:Description>
     <rdf:Description>
-        <exclude rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
+        <pulledBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
     </rdf:Description>
     <rdf:Description>
         <pulledBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
@@ -3511,31 +3491,31 @@ các phương tiện giao thông đến từ hướng khác nhường đường 
         <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid28">
-        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam"/>
-        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid29">
         <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
         <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
     </rdf:Description>
-    <rdf:Description>
-        <pulledBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+    <rdf:Description rdf:nodeID="genid29">
+        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam"/>
+        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton"/>
     </rdf:Description>
     <rdf:Description>
-        <prescribedAt rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <exclude rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>đường qua khu đông dân cư</rdfs:label>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện"/>
+    </rdf:Description>
+    <rdf:Description>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
+    </rdf:Description>
+    <rdf:Description>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
     </rdf:Description>
     <rdf:Description>
         <specification>xe</specification>
         <rdfs:label>add</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
-    </rdf:Description>
-    <rdf:Description>
-        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
+        <rdfs:label>đường qua khu đông dân cư</rdfs:label>
     </rdf:Description>
     
 
