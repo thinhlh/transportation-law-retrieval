@@ -1,6 +1,6 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, Session
 from dotenv import load_dotenv
 import os
 
@@ -20,13 +20,15 @@ def get_engine():
     return create_engine(get_postgres_url())
 
 
-def get_session():
+def get_session() -> Session:
     try:
         SessionLocal = sessionmaker(
             autocommit=False, autoflush=False, bind=get_engine())
-        yield SessionLocal
+        with SessionLocal.begin() as session:
+            yield session
+        return session
     finally:
-        SessionLocal.close_all()
+        session.close_all()
 
 
 Base = declarative_base()

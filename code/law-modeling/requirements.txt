@@ -4,3 +4,6 @@ psycopg2
 sqlalchemy
 alembic
 python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+sqlmodel

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.models import article, document
+from app.routers import article, auth, document
 
 app = FastAPI(
     title='Transportation Law Retrieval API',
@@ -26,7 +26,11 @@ app.add_middleware(
     allow_headers=ALLOW_HEADERS,
 )
 
-ROUTERS = []
+ROUTERS = [
+    article.router,
+    auth.router,
+    document.router,
+]
 
 for router in ROUTERS:
     app.include_router(router=router)
