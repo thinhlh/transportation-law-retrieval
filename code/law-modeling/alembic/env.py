@@ -4,7 +4,7 @@ import os
 from sqlalchemy import pool, create_engine
 
 from app.models.article import Article
-from config.pg_database import engine
+from dotenv import load_dotenv
 
 from alembic import context
 
@@ -17,7 +17,11 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-target_metadata = Article.metadata
+target_metadata = [Article.metadata]
+
+if 'env' in context.get_x_argument(as_dictionary=True):
+    environment = context.get_x_argument(as_dictionary=True)['env']
+    load_dotenv(f'environments/{environment}.env')
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
@@ -30,7 +34,7 @@ def get_url():
     password = os.environ.get("POSTGRES_PASSWORD")
     db_name = os.environ.get("POSTGRES_DB")
     host = os.environ.get("POSTGRES_HOST")
-    port = os.environ.get("POSTGRES_HOST")
+    port = os.environ.get("POSTGRES_PORT")
     return f'postgresql://{username}:{password}@{host}:{port}/{db_name}'
 
 
@@ -46,6 +50,8 @@ def run_migrations_offline() -> None:
     script output.
 
     """
+
+    print('HERE')
     url = get_url()
     context.configure(
         url=url,
@@ -65,8 +71,7 @@ def run_migrations_online() -> None:
     and associate a connection with the context.
 
     """
-    # connectable = create_engine(get_url())
-    connectable = engine
+    connectable = create_engine(get_url())
 
     with connectable.connect() as connection:
         context.configure(
