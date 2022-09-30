@@ -2,5 +2,4 @@ env/
 __pycache__/
 *.env
 .DS_Store
-environments/
 !template.env
