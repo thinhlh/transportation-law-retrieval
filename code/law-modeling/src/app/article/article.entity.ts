@@ -3,7 +3,7 @@ import { Document } from "../document/document.entity"
 
 @Entity()
 export class Article {
-    @PrimaryGeneratedColumn("uuid")
+    @PrimaryColumn()
     id: string
 
     @Column("int")

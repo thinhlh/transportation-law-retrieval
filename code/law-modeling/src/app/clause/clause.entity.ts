@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryColumn } from "typeorm"
+import { Column, Entity, ManyToOne, PrimaryColumn } from "typeorm"
+import { Article } from "../article/article.entity"
 
 @Entity()
 export class Clause {
@@ -6,5 +7,11 @@ export class Clause {
     id: string
 
     @Column()
+    index: number
+
+    @Column()
     content: string
+
+    @ManyToOne(() => Article)
+    article: Article
 }

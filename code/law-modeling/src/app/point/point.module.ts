@@ -7,7 +7,8 @@ import { PointService } from "./point.service";
 @Module({
     imports: [TypeOrmModule.forFeature([Point])],
     controllers: [PointController],
-    providers: [PointService]
+    providers: [PointService],
+    exports: [PointService]
 })
 export class PointModule {
 
