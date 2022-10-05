@@ -17,7 +17,7 @@ export class ClauseService {
     createClause(createClauseDTO: CreateClauseDTO, article: Article): Promise<Clause> {
         const clause = this.clauseRepository.create({
             ...createClauseDTO,
-            id: `${createClauseDTO.index}|${article.index}|${article.document.code}`,
+            id: `${createClauseDTO.index}|${article.index}|${article.document.id}`,
             article: article
         })
 
@@ -25,26 +25,21 @@ export class ClauseService {
     }
 
     async createClauses(createClauseDTOs: CreateClauseDTO[], article: Article): Promise<Clause[]> {
-        var clauses = this
-            .clauseRepository
-            .create(
-                createClauseDTOs.map((createClauseDTO) => {
 
-                    const clause: Clause = ({
-                        ...createClauseDTO,
-                        id: `${createClauseDTO.index}|${article.index}|${article.document.code}`,
-                        article: article,
-                    })
+        return Promise.all(createClauseDTOs.map(async (createClauseDTO) => {
 
-                    this.pointService.createPoints(createClauseDTO.points, clause)
+            let clause = this.clauseRepository.create({
+                ...createClauseDTO,
+                id: `${createClauseDTO.index}|${article.index}|${article.document.id}`,
+                article: article,
+            })
 
-                    return null
-                })
-            )
+            clause = await this.clauseRepository.save(clause)
 
-        clauses = await this.clauseRepository.save(clauses)
+            this.pointService.createPoints(createClauseDTO.points, clause)
 
-        clauses.forEach((clause) => { })
+            return clause
+        }))
     }
 
 

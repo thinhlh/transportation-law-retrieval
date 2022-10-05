@@ -8,7 +8,4 @@ export class Document {
 
     @Column({ unique: true })
     title: string
-
-    @Column({ unique: true })
-    code: string
 }

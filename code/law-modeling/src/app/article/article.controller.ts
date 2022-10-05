@@ -19,4 +19,12 @@ export class ArticleController {
     async createArticle(@Body() createArticleDTO: CreateArticleDto): Promise<Article> {
         return this.articleService.createArticle(createArticleDTO)
     }
+
+    @Post("/articles")
+    async createArticles(@Body() createArticleDTOs: CreateArticleDto[]): Promise<Article[]> {
+        return Promise.all(
+            createArticleDTOs
+                .map(async (createArticleDTO) => await this.createArticle(createArticleDTO))
+        )
+    }
 }

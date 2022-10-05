@@ -22,7 +22,7 @@ export class PointService {
                     .map(
                         createPointDTO => ({
                             ...createPointDTO,
-                            id: `${createPointDTO.index}|${clause.index}|${clause.article.index}|${clause.article.document.code}`,
+                            id: `${createPointDTO.index}|${clause.index}|${clause.article.index}|${clause.article.document.id}`,
                             clause: clause
                         })
                     )

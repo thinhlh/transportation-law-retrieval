@@ -14,12 +14,18 @@ export class ArticleService {
         private readonly clauseService: ClauseService,
     ) { }
     async getArticles(): Promise<Article[]> {
-        return await this.articleRepository.find()
+        return await this.articleRepository.find({
+            relations: ["clauses", "clauses.points"],
+        })
     }
 
     async createArticle(createArtcleDTO: CreateArticleDto): Promise<Article> {
         const document = await this.documentService.getDocumentById(createArtcleDTO.documentId)
-        var article = this.articleRepository.create({ ...createArtcleDTO, document: document })
+        var article = this.articleRepository.create({
+            ...createArtcleDTO,
+            id: `${createArtcleDTO.index}|${document.id}`,
+            document: document
+        })
         article = await this.articleRepository.save(article)
 
         await this.clauseService.createClauses(createArtcleDTO.clauses, article)

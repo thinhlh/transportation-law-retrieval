@@ -1,5 +1,6 @@
-import { Column, Entity, ManyToOne, PrimaryColumn } from "typeorm"
+import { Column, Entity, ManyToOne, OneToMany, PrimaryColumn } from "typeorm"
 import { Article } from "../article/article.entity"
+import { Point } from "../point/point.entity"
 
 @Entity()
 export class Clause {
@@ -14,4 +15,7 @@ export class Clause {
 
     @ManyToOne(() => Article)
     article: Article
+
+    @OneToMany(() => Point, (point) => point.clause)
+    points: Point[]
 }

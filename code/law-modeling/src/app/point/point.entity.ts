@@ -7,6 +7,9 @@ export class Point {
     id: string
 
     @Column()
+    index: string
+
+    @Column()
     content: string
 
     @ManyToOne(() => Clause)

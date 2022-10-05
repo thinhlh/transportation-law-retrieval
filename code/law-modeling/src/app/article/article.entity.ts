@@ -1,4 +1,5 @@
-import { Column, Entity, ManyToOne, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm"
+import { Column, Entity, ManyToOne, OneToMany, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm"
+import { Clause } from "../clause/clause.entity"
 import { Document } from "../document/document.entity"
 
 @Entity()
@@ -6,7 +7,7 @@ export class Article {
     @PrimaryColumn()
     id: string
 
-    @Column("int")
+    @Column()
     index: number
 
     @Column()
@@ -17,4 +18,7 @@ export class Article {
 
     @ManyToOne(() => Document)
     document: Document
+
+    @OneToMany(() => Clause, (clause) => clause.article)
+    clauses: Clause[]
 }

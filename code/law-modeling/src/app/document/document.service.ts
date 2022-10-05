@@ -16,7 +16,7 @@ export class DocumentService {
     }
 
     async createDocument(createDocumentDTO: CreateDocumentDTO): Promise<Document> {
-        const document = this.documentRepository.create({ ...createDocumentDTO })
+        const document = this.documentRepository.create({ ...createDocumentDTO, id: createDocumentDTO.code })
         return await this.documentRepository.save(document)
     }
 
