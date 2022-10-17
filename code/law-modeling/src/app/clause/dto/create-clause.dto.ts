@@ -1,4 +1,4 @@
-import { CreatePointDTO } from "src/app/point/dto/create-point.dto"
+import { CreatePointDTO } from "../../point/dto/create-point.dto";
 
 export class CreateClauseDTO {
     index: number

@@ -17,6 +17,7 @@ export class ArticleService {
         return await this.articleRepository.find({
             relations: ["clauses", "clauses.points"],
         })
+        
     }
 
     async createArticle(createArtcleDTO: CreateArticleDto): Promise<Article> {

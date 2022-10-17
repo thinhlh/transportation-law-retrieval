@@ -9,11 +9,11 @@ import { PointModule } from "./point/point.module";
   imports: [
     TypeOrmModule.forRoot({
       type: "postgres",
-      host: "localhost",
+      host: "db",
       port: 5432,
       username: "postgres",
       password: "postgres",
-      database: "law_retrieval",
+      database: "postgres",
       synchronize: true,
       autoLoadEntities: true,
     }),

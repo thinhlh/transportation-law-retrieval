@@ -22,7 +22,7 @@ async function runApp(app: INestApplication) {
 }
 
 async function configApp(app: INestApplication) {
-  app.setGlobalPrefix("/api")
+  app.setGlobalPrefix("/")
   app.useGlobalFilters(new CustomExceptionFilter());
   app.useGlobalInterceptors(new ResponseInterceptor())
 }

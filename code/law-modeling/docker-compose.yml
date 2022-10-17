@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  db: 
+    image: postgres
+    container_name: law-modeling-db
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  app:
+    build: 
+      context: .
+      dockerfile: ./docker/app/Dockerfile
+    command: ["npm", "run", "start"]
+    links: 
+      - db
+
+  lb:
+    build: 
+      context: ./docker/nginx
+      dockerfile: Dockerfile    
+    container_name: law-modeling-lb
+    ports:
+      - 80:80
+    depends_on:
+      - law-modeling-app-1
+      - law-modeling-app-2
+      - law-modeling-app-3
+    links: 
+      - law-modeling-app-1
+      - law-modeling-app-2
+      - law-modeling-app-3
