@@ -26,10 +26,6 @@ services:
     ports:
       - 80:80
     depends_on:
-      - law-modeling-app-1
-      - law-modeling-app-2
-      - law-modeling-app-3
+      - app
     links: 
-      - law-modeling-app-1
-      - law-modeling-app-2
-      - law-modeling-app-3
+      - app
