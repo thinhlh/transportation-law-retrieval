@@ -34,6 +34,7 @@ services:
     links: 
       - db
       - cache
+      - logging
 
   app:
     build: 
@@ -50,6 +51,7 @@ services:
     links: 
       - db
       - cache
+      - logging
 
   lb:
     build: 
@@ -62,3 +64,9 @@ services:
       - app
     links: 
       - app
+
+  logging:
+    build:
+      context: .
+      dockerfile: ./docker/logging/Dockerfile
+    container_name: law-modeling-logging
