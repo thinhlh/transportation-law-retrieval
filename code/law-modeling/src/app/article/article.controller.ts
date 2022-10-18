@@ -12,8 +12,13 @@ export class ArticleController {
     }
 
     @Get("/articles")
-    async getArticles(): Promise<Article[]> {
-        return this.articleService.getArticles()
+    async getArticles(@Req() request: Request): Promise<Article[]> {
+        return this.articleService.getArticleNoReplica();
+        if (process.env.OPTIMIZED === 'false') {
+            return this.articleService.getArticleNoReplica();
+        } else {
+            return this.articleService.getArticles();
+        }
     }
 
     @Post("/article")

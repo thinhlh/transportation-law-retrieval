@@ -3,12 +3,12 @@ import http from "k6/http";
 
 export default function () {
   var url =
-    __ENV.NODE_ENV === "dev"
-      ? "http://host.docker.internal:3000/articles"
-      : "http://host.docker.internal:80/articles";
+    __ENV.OPTIMIZED === "true"
+      ? "http://host.docker.internal:80/articles"
+      : "http://host.docker.internal:3000/articles";
 
   console.log(url);
-  let res = http.get(url);
+  let res = http.get(url, { timeout: 60000 }); // 30s
   check(
     res,
     {
