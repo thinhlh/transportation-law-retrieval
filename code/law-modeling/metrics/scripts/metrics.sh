@@ -1,0 +1,1 @@
+docker run --rm --env NODE_ENV=$1 -i grafana/k6 run --vus 15000 --duration 60s - <scripts.js
