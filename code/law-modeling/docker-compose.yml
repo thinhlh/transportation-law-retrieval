@@ -4,69 +4,13 @@ services:
   db: 
     image: postgres
     container_name: law-modeling-db
-    expose:
-      - 5432
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    env_file:
+      - ./env/dev.env
 
   cache:
     image: redis
     container_name: law-modeling-cache
     ports:
       - 6379:6379
-
-  local-app:
-    build: 
-      context: .
-      dockerfile: ./docker/app/Dockerfile
-    command: ["npm", "run", "start"]
-    container_name: law-modeling-local-app
-    ports:
-      - 3000:3000
-    env_file:
-      - "./env/$ENV.env"
-    environment:
-      - OPTIMIZED=false
-    depends_on:
-      - db
-      - cache
-    links: 
-      - db
-      - cache
-      - logging
-
-  app:
-    build: 
-      context: .
-      dockerfile: ./docker/app/Dockerfile
-    command: ["npm", "run", "start"]
-    env_file:
-      - "./env/$ENV.env"
-    environment:
-      - OPTIMIZED=false
-    depends_on:
-      - db
-      - cache
-    links: 
-      - db
-      - cache
-      - logging
-
-  lb:
-    build: 
-      context: ./docker/nginx
-      dockerfile: Dockerfile    
-    container_name: law-modeling-lb
-    ports:
-      - 80:80
-    depends_on:
-      - app
-    links: 
-      - app
-
-  logging:
-    build:
-      context: .
-      dockerfile: ./docker/logging/Dockerfile
-    container_name: law-modeling-logging

@@ -1,19 +1,20 @@
-import { CacheModule, CACHE_MANAGER, Module } from "@nestjs/common";
+import { Module, OnApplicationBootstrap } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { readFile } from "fs";
 import { ArticleModule } from "./article/article.module";
+import { ArticleService } from "./article/article.service";
+import { CreateArticleDto } from "./article/dto/create-article.dto";
 import { ClauseModule } from "./clause/clause.module";
 import { DocumentModule } from "./document/document.module";
+import { DocumentService } from "./document/document.service";
 import { PointModule } from "./point/point.module";
-import * as redisStore from 'cache-manager-redis-store';
 
 @Module({
   imports: [
-    CacheModule.register({
+    ConfigModule.forRoot({
+      envFilePath: './env/dev.env',
       isGlobal: true,
-      store: redisStore,
-      host: process.env.REDIS_HOST,
-      port: +process.env.REDIS_PORT,
-      ttl: 30,
     }),
     TypeOrmModule.forRoot({
       type: "postgres",
@@ -25,7 +26,34 @@ import * as redisStore from 'cache-manager-redis-store';
       synchronize: true,
       autoLoadEntities: true,
     }),
-    DocumentModule, ArticleModule, ClauseModule, PointModule
+    ArticleModule,
+    ClauseModule,
+    DocumentModule,
+    PointModule
   ],
 })
-export class AppModule { }
+export class AppModule implements OnApplicationBootstrap {
+  constructor(
+    private readonly documentService: DocumentService,
+    private readonly articleService: ArticleService,
+  ) { }
+
+  async onApplicationBootstrap() {
+    readFile('./src/data/documents.json', 'utf-8', async (err, data) => {
+
+      const document = JSON.parse(data)
+      await this.documentService.createDocument(document)
+
+      readFile('./src/data/articles.json', 'utf-8', (err, data) => {
+        const articles: CreateArticleDto[] = JSON.parse(data)
+
+        articles.forEach(async (article) => {
+          await this.articleService.createArticle(article)
+        })
+      })
+    })
+
+
+    // this.documentService.createDocument()
+  }
+}

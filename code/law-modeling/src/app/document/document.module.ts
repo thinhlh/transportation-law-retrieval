@@ -1,8 +1,10 @@
-import { Module } from "@nestjs/common";
+import { Module, OnModuleInit } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { readFile } from "fs";
 import { DocumentController } from "./document.controller";
 import { Document } from "./document.entity";
 import { DocumentService } from "./document.service";
+import { CreateDocumentDTO } from "./dto/create-document.dto";
 
 @Module({
     imports: [TypeOrmModule.forFeature([Document])],
@@ -11,6 +13,4 @@ import { DocumentService } from "./document.service";
     exports: [DocumentService]
 
 })
-export class DocumentModule {
-
-}
+export class DocumentModule { }

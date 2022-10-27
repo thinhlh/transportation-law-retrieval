@@ -10,22 +10,14 @@ export class ArticleController {
 
     constructor(
         private readonly articleService: ArticleService,
-        private readonly httpService: HttpService
     ) {
 
     }
 
     @Get("/articles")
     async getArticles(@Req() request: Request): Promise<Article[]> {
-        const articles = await this.articleService.getArticleNoReplica();
-        this.httpService.get("http://logging:8000/", { data: articles })
+        const articles = await this.articleService.getArticles();
         return articles;
-
-        if (process.env.OPTIMIZED === 'false') {
-            return this.articleService.getArticleNoReplica();
-        } else {
-            return this.articleService.getArticles();
-        }
     }
 
     @Post("/article")
