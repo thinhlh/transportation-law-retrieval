@@ -2,6 +2,7 @@ import { Module, OnApplicationBootstrap } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { readFile } from "fs";
+import { Neo4jModule } from "nest-neo4j/dist";
 import { ArticleModule } from "./article/article.module";
 import { ArticleService } from "./article/article.service";
 import { CreateArticleDto } from "./article/dto/create-article.dto";
@@ -26,6 +27,14 @@ import { PointModule } from "./point/point.module";
       synchronize: true,
       autoLoadEntities: true,
     }),
+    Neo4jModule.forRoot({
+      scheme: "bolt",
+      host: process.env.GRAPH_HOST,
+      port: process.env.GRAPH_PORT,
+      database: process.env.GRAPH_DB,
+      username: process.env.GRAPH_USER,
+      password: process.env.GRAPH_PASSWORD,
+    }),
     ArticleModule,
     ClauseModule,
     DocumentModule,
@@ -40,7 +49,6 @@ export class AppModule implements OnApplicationBootstrap {
 
   async onApplicationBootstrap() {
     readFile('./src/data/documents.json', 'utf-8', async (err, data) => {
-
       const document = JSON.parse(data)
       await this.documentService.createDocument(document)
 

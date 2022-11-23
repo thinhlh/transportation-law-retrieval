@@ -9,6 +9,20 @@ services:
     env_file:
       - ./env/dev.env
 
+  neo4j:
+    image: neo4j
+    container_name: law-modeling-graph
+    ports:
+      - 7474:7474
+      - 7473:7473
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=none
+    # env_file:
+    #   - ./env/dev.env
+    # volumes:
+    #   - ./data:/data
+
   cache:
     image: redis
     container_name: law-modeling-cache

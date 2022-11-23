@@ -1,5 +1,6 @@
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { Neo4jModule } from "nest-neo4j/dist";
 import { Article } from "../article/article.entity";
 import { Clause } from "../clause/clause.entity";
 import { Point } from "../point/point.entity";
