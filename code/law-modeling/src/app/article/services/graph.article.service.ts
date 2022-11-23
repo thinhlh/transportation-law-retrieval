@@ -26,32 +26,7 @@ export class GraphArticleService {
 
         result.records.forEach((record => {
             createArtcleDTO.clauses.forEach(async (clause) => {
-                const clauseCreateResult = await this.neo4jService.write(
-                    `
-                MATCH (article: Article)
-                WHERE id(article) = $articleId
-                MERGE (clause: Clause {content: $content, index: $index}) <-[:HAS]-(article)
-                RETURN id(clause) as id
-                `,
-                    {
-                        articleId: record.get('id').low,
-                        content: clause.content,
-                        index: clause.index,
-                    });
-
-                clauseCreateResult.records.forEach((clauseResult) => {
-                    clause.points.forEach(async (point) => {
-                        await this.neo4jService.write(`
-                        MATCH (clause: Clause)
-                        WHERE id(clause) = $clauseId
-                        MERGE (point: Point {content: $content, index: $index}) <-[:HAS]-(clause)
-                        `, {
-                            clauseId: clauseResult.get('id').low,
-                            content: point.content,
-                            index: point.index
-                        });
-                    })
-                });
+                await this.graphClauseService.createClause(clause, record.get('id').low)
             });
         }))
     }
