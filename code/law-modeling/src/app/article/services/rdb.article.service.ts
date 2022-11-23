@@ -1,17 +1,17 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { ClauseService } from "../clause/clause.service";
-import { DocumentService } from "../document/document.service";
-import { Article } from "./article.entity";
-import { CreateArticleDto } from "./dto/create-article.dto";
+import { RDBClauseService } from "../../clause/services/rdb.clause.service";
+import { RDBDocumentService } from "../../document/services/rdb.document.service";
+import { Article } from "../article.entity";
+import { CreateArticleDto } from "../dto/create-article.dto";
 
 @Injectable()
-export class ArticleService {
+export class RDBArticleService {
     constructor(
         @InjectRepository(Article) private readonly articleRepository: Repository<Article>,
-        private readonly documentService: DocumentService,
-        private readonly clauseService: ClauseService,
+        private readonly documentService: RDBDocumentService,
+        private readonly clauseService: RDBClauseService,
     ) { }
 
     async getArticles(): Promise<Article[]> {
@@ -20,7 +20,6 @@ export class ArticleService {
         });
 
         return articles;
-
     }
 
     async createArticle(createArtcleDTO: CreateArticleDto): Promise<Article> {

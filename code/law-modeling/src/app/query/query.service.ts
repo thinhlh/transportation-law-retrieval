@@ -1,8 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
+import { Neo4jService } from "nest-neo4j/dist";
 import { Repository, Like, ILike } from "typeorm";
 import { Article } from "../article/article.entity";
-import { ArticleService } from "../article/article.service";
+import { RDBArticleService } from "../article/services/rdb.article.service";
 import { Clause } from "../clause/clause.entity";
 import { Point } from "../point/point.entity";
 import { QueryResponse } from "./query.response";
@@ -14,6 +15,7 @@ export class QueryService {
         @InjectRepository(Article) private readonly articleRepository: Repository<Article>,
         @InjectRepository(Clause) private readonly clauseRepository: Repository<Clause>,
         @InjectRepository(Point) private readonly pointRepository: Repository<Point>,
+        private readonly neo4jService: Neo4jService,
     ) { }
     async query(queryStr: string) {
 
@@ -45,7 +47,5 @@ export class QueryService {
         const po = points.map<QueryResponse>(point => ({ id: point.id, content: point.content }))
 
         return ar.concat(cl, po)
-
-
     }
 }

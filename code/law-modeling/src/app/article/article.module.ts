@@ -6,8 +6,9 @@ import { ClauseModule } from "../clause/clause.module";
 import { DocumentModule } from "../document/document.module";
 import { ArticleController } from "./article.controller";
 import { Article } from "./article.entity";
-import { ArticleService } from "./article.service";
+import { RDBArticleService } from "./services/rdb.article.service";
 import { CreateArticleDto } from "./dto/create-article.dto";
+import { GraphArticleService } from "./services/graph.article.service";
 
 @Module({
     imports: [
@@ -17,7 +18,7 @@ import { CreateArticleDto } from "./dto/create-article.dto";
         ClauseModule,
     ],
     controllers: [ArticleController],
-    providers: [ArticleService],
-    exports: [ArticleService]
+    providers: [RDBArticleService, GraphArticleService],
+    exports: [RDBArticleService, GraphArticleService]
 })
 export class ArticleModule { }

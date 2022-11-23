@@ -3,7 +3,8 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { PointModule } from "../point/point.module";
 import { ClauseController } from "./clause.controller";
 import { Clause } from "./clause.entity";
-import { ClauseService } from "./clause.service";
+import { GraphClauseService } from "./services/graph.clause.service";
+import { RDBClauseService } from "./services/rdb.clause.service";
 
 @Module({
     imports: [
@@ -11,8 +12,8 @@ import { ClauseService } from "./clause.service";
         PointModule
     ],
     controllers: [ClauseController],
-    providers: [ClauseService],
-    exports: [ClauseService]
+    providers: [RDBClauseService, GraphClauseService],
+    exports: [RDBClauseService, GraphClauseService]
 })
 export class ClauseModule {
 

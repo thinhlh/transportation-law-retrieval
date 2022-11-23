@@ -1,13 +1,13 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { Article } from "../article/article.entity";
-import { PointService } from "../point/point.service";
-import { Clause } from "./clause.entity";
-import { CreateClauseDTO } from "./dto/create-clause.dto";
+import { Article } from "../../article/article.entity";
+import { PointService } from "../../point/point.service";
+import { Clause } from "../clause.entity";
+import { CreateClauseDTO } from "../dto/create-clause.dto";
 
 @Injectable()
-export class ClauseService {
+export class RDBClauseService {
 
     constructor(
         @InjectRepository(Clause) private readonly clauseRepository: Repository<Clause>,

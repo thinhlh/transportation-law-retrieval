@@ -3,13 +3,18 @@ import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { readFile } from "fs";
 import { Neo4jModule } from "nest-neo4j/dist";
+import { doc } from "prettier";
 import { ArticleModule } from "./article/article.module";
-import { ArticleService } from "./article/article.service";
+import { RDBArticleService } from "./article/services/rdb.article.service";
 import { CreateArticleDto } from "./article/dto/create-article.dto";
 import { ClauseModule } from "./clause/clause.module";
 import { DocumentModule } from "./document/document.module";
-import { DocumentService } from "./document/document.service";
+import { CreateDocumentDTO } from "./document/dto/create-document.dto";
+import { GraphDocumentService } from "./document/services/graph.document.service";
+import { RDBDocumentService } from "./document/services/rdb.document.service";
 import { PointModule } from "./point/point.module";
+import { QueryModule } from "./query/query.module";
+import { GraphArticleService } from "./article/services/graph.article.service";
 
 @Module({
   imports: [
@@ -38,24 +43,31 @@ import { PointModule } from "./point/point.module";
     ArticleModule,
     ClauseModule,
     DocumentModule,
-    PointModule
+    PointModule,
+    QueryModule,
   ],
 })
 export class AppModule implements OnApplicationBootstrap {
   constructor(
-    private readonly documentService: DocumentService,
-    private readonly articleService: ArticleService,
+    private readonly documentService: RDBDocumentService,
+    private readonly graphDocumentService: GraphDocumentService,
+    private readonly articleService: RDBArticleService,
+    private readonly graphArticleService: GraphArticleService,
   ) { }
 
   async onApplicationBootstrap() {
     readFile('./src/data/documents.json', 'utf-8', async (err, data) => {
-      const document = JSON.parse(data)
-      await this.documentService.createDocument(document)
+      const documents: CreateDocumentDTO[] = JSON.parse(data)
+      documents.forEach(async (document) => {
+        await this.graphDocumentService.createDocument(document)
+        await this.documentService.createDocument(document)
+      })
 
       readFile('./src/data/articles.json', 'utf-8', (err, data) => {
         const articles: CreateArticleDto[] = JSON.parse(data)
 
         articles.forEach(async (article) => {
+          await this.graphArticleService.createArticle(article)
           await this.articleService.createArticle(article)
         })
       })
