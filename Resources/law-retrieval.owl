@@ -1950,7 +1950,7 @@
         <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RD0cnZYmIjpXTCe5stKYDcf"/>
         <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RDzV6hDACbQJIdyntOteMj7"/>
         <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RVFiEDoWYRP08ndcnxCVmK"/>
-        <rdfs:label xml:lang="en">100/2019</rdfs:label>
+        <rdfs:label>100/2019</rdfs:label>
     </owl:NamedIndividual>
     
 
