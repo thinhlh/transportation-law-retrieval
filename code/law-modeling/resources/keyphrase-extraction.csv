@@ -102,10 +102,10 @@ No,Question,Keyphrase
 - vi phạm hành chính"
 20,"Trường hợp người điều khiển xe mô tô, xe máy kéo uốngrượu, bia khi lái xe tham gia giao thông sẽ bị xử phạt như thế nào?","- xe mô tô 
 - xe máy kéo
-- uống rượu, bia 
+- uống rượu bia 
 - xử phạt "
 21,"Người đi xe đạp đã uống rượu, bia khi tham gia giao thông có bị xử phạt vi phạm hành chính không?","- xe đạp
-- uống rượu, bia
+- uống rượu bia
 - xử phạt
 - vi phạm hành chính"
 22,Pháp luật quy định xử phạt đối với người điều khiển xe ô tô chở quá trọng tải như thế nào?,"- quy định
@@ -122,7 +122,10 @@ No,Question,Keyphrase
 - chở quá số người quy định
 - xử phạt
 - chủ xe"
-25,"Hiện nay, trên các tuyến đường giao thông vẫn xảy ra tình trạng các xe thường đón, trả khách tại những địa điểm không đúng nơi quy định, dễ gây tai nạn và gây nguy hiểm cho những người tham gia giao thông khác. Vậy trường hợp lái xe đón trả khách không đúng nơi quy định này bị xử lý như thế nào?","- xe đón, trả khách
+25,"Hiện nay, trên các tuyến đường giao thông vẫn xảy ra tình trạng các xe thường đón, trả khách tại những địa điểm không đúng nơi quy định, dễ gây tai nạn và gây nguy hiểm cho những người tham gia giao thông khác. Vậy trường hợp lái xe đón trả khách không đúng nơi quy định này bị xử lý như thế nào?","- xe 
+- đón
+- trả 
+- khách
 - những địa điểm không đúng nơi quy định
 - gây tại nạn và nguy hiểm cho những người tham gia giao thông khác
 - lái xe đón trả khách
@@ -190,7 +193,7 @@ No,Question,Keyphrase
 - điều kiện kinh doanh
 - xe ô tô 
 - kinh doanh
-- thiết bị giám  hành trình
+- thiết bị giám sát hành trình
 - không lắp
 - người điều khiển
 - xử phạt"
@@ -198,7 +201,7 @@ No,Question,Keyphrase
 - điều kiện kinh doanh
 - xe ô tô 
 - kinh doanh
-- thiết bị giám  hành trình
+- thiết bị giám sát hành trình
 - không lắp
 - cá nhân
 - tổ chức kinh doanh
@@ -209,20 +212,22 @@ No,Question,Keyphrase
 - xe vận chuyển hành khách theo tuyến cố định
 - xử phạt
 - vi phạm
-- trật tự an toàn giao thông
-"
+- trật tự an toàn giao thông"
 36,"Theo quy định của Nghị định số 100/2019/NĐ-CP, hành khách đi xe vi phạm quy định về trật tự an toàn giao thông sẽ bị xử phạt như thế nào?","- 100/2019/NĐ-CP
 - hành khách
 - vi phạm
 - quy định 
 - trật tự an toàn giao thông
 - xử phạt"
-37,"Nghị định số 100/2019/NĐ-CP quy định về xử phạt đối với Tổ chức, cá nhân có hành vi vi phạm quy định về xây dựng bến xe, bãi đỗ xe, tạm dừng nghỉ như thế nào?","- 100/2019/NĐ-Cp
+37,"Nghị định số 100/2019/NĐ-CP quy định về xử phạt đối với Tổ chức, cá nhân có hành vi vi phạm quy định về xây dựng bến xe, bãi đỗ xe, tạm dừng nghỉ như thế nào?","- 100/2019/NĐ-CP
 - tổ chức 
 - cá nhân
 - vi phạm
 - quy định
-- xây dựng bến xe, bãi đổ xe, trạm dừng nghỉ "
+- xây dựng
+- bến xe
+- bãi đổ xe
+- trạm dừng nghỉ "
 38,Những hành vi vi phạm quy định về bảo vệ hạ tầng giao thông đường bộ thường hay xảy ra?,"- hành vi 
 - vi phạm
 - quy định
@@ -297,7 +302,8 @@ No,Question,Keyphrase
 - không chấp hành
 - bỏ về nhà
 - xử phạt"
-50,"Việc người điều khiển xe máy, xe đạp sử dụng hoặc chờ người sử dụng ô (dù) khi tham gia giao thông tiềm ẩn nhiều nguy cơ gây tai nạn giao thông nhất là trong thời tiết mưa gió. Vậy Nghị định số 100/2019/NĐ-CP quy định xử phạt đối với người điều khiển xe máy, xe đạp sử dụng ô dù khi tham gia giao thông như thế nào?","- người điều khiển xe máy, xe đạp
+50,"Việc người điều khiển xe máy, xe đạp sử dụng hoặc chờ người sử dụng ô (dù) khi tham gia giao thông tiềm ẩn nhiều nguy cơ gây tai nạn giao thông nhất là trong thời tiết mưa gió. Vậy Nghị định số 100/2019/NĐ-CP quy định xử phạt đối với người điều khiển xe máy, xe đạp sử dụng ô dù khi tham gia giao thông như thế nào?","- người điều khiển xe máy
+- xe đạp
 - chở người sử dụng ô
 - gây tai nạn giao thông
 - 100/2019/NĐ-CP
@@ -331,7 +337,10 @@ No,Question,Keyphrase
 - hầm đường sắt
 - xử lý"
 56,"Hành vi ném đất, đá hoặc vật khác lên tàu hoặc từ trên tàu xuống bị xử lý như thế nào?","- hành vi
-- ném đất, đá hoặc vật khác lên tàu
+- ném 
+- đất
+- đá 
+- vật khác lên tàu
 - từ trên tàu xuống
 - xử lý"
 57,Hành vi sử dụng vé tàu giả và bán vé tàu trái quy định bị xử lý như thế nào?,"- sử dụng
@@ -552,8 +561,7 @@ No,Question,Keyphrase
 - quy định
 - xử phạt
 - vi phạm"
-86,Hành vi điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h bị xử phạt vi phạm hành chính như thế nào?,
-87,"Hành vi không chấp hành hiệu lệnh của đèn tín hiệu giao thông và không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+86,"Hành vi không chấp hành hiệu lệnh của đèn tín hiệu giao thông và không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - không chấp hành
 - hiệu lệnh
 - đèn tín hiệu
@@ -562,7 +570,7 @@ No,Question,Keyphrase
 - người kiểm soát giao thông
 - xử phạt
 - vi phạm"
-88,"Người đang điều khiển xe sử dụng ô (dù), điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính bị xử phạt vi phạm hành chính như thế nào?","- người
+87,"Người đang điều khiển xe sử dụng ô (dù), điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính bị xử phạt vi phạm hành chính như thế nào?","- người
 - điều khiển
 - xe 
 - sử dụng
@@ -574,14 +582,14 @@ No,Question,Keyphrase
 - thiết bị trợ thính
 - xử phạt
 - vi phạm "
-89,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+88,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - điều khiển
 - xe 
 - nồng độ cồn
 - vượt quá
 - xử phạt
 - vi phạm"
-90,"Hành vi điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+89,"Hành vi điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - điều khiển
 - xe
 - lạng lách
@@ -592,7 +600,7 @@ No,Question,Keyphrase
 - đô thị
 - xử phạt
 - vi phạm"
-91,"Hành vi gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+90,"Hành vi gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - gây 
 - tai nạn
 - không dừng
@@ -604,14 +612,14 @@ No,Question,Keyphrase
 - người bị nạn
 - xử phạt
 - vi phạm"
-92,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+91,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - điều khiển
 - xe 
 - nồng độ cồn
 - vượt quá
 - xử phạt
 - vi phạm"
-93,"Hành vi không đi bên phải theo chiều đi của mình, đi không đúng phần đường quy định; Dừng xe đột ngột; chuyển hướng không báo hiệu trước bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+92,"Hành vi không đi bên phải theo chiều đi của mình, đi không đúng phần đường quy định; Dừng xe đột ngột; chuyển hướng không báo hiệu trước bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - không đi
 - bên phải
 - đi
@@ -623,7 +631,7 @@ No,Question,Keyphrase
 - không báo hiệu
 - xử phạt
 - vi phạm"
-94,"Hành vi dùng xe đẩy làm quầy hàng lưu động trên đường, gây cản trở giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+93,"Hành vi dùng xe đẩy làm quầy hàng lưu động trên đường, gây cản trở giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - dùng 
 - xe đẩy
 - làm
@@ -632,7 +640,7 @@ No,Question,Keyphrase
 - cản trở
 - xử phạt 
 - vi phạm"
-95,"Hành vi không chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông; Không chấp hành hiệu lệnh của đèn tín hiệu giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+94,"Hành vi không chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông; Không chấp hành hiệu lệnh của đèn tín hiệu giao thông bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - không chấp hành
 - hiệu lệnh
 - chỉ dẫn
@@ -641,14 +649,14 @@ No,Question,Keyphrase
 - đèn tín hiệu
 - xử phạt
 - vi phạm"
-96,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+95,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - điều khiển
 - xe 
 - nồng độ cồn
 - vượt quá
 - xử phạt
 - vi phạm"
-97,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở và không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ bị xử phạt vi phạm hành chính như thế nào?","- hành vi
+96,"Hành vi điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở và không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ bị xử phạt vi phạm hành chính như thế nào?","- hành vi
 - điều khiển
 - xe 
 - nồng độ cồn
@@ -659,19 +667,26 @@ No,Question,Keyphrase
 - người thi hành công vụ
 - xử phạt
 - vi phạm"
-98,Việc vượt đèn đỏ với từng loại phương tiện sẽ bị phạt như thế nào? ,"- vượt
+97,Việc vượt đèn đỏ với từng loại phương tiện sẽ bị phạt như thế nào? ,"- vượt
 - đèn đỏ
 - phương tiện
 - phạt"
-99,Người điểu khiển phương tiện khi lùi xe cần phải tuân thủ những quy định nào?,"- người điều khiển
+98,Người điểu khiển phương tiện khi lùi xe cần phải tuân thủ những quy định nào?,"- người điều khiển
 - phương tiện
 - lùi xe
 - tuân thủ
 - quy định"
-100,Luật giao thông đường bộ năm 2008 quy định như thế nào về tín hiệu đèn giao thông? Mức xử phạt vi phạm hành chính đối với người điều khiển phương tiện không chấp hành tín hiệu đèn giao thông được quy định như thế nào?,"- quy định
+99,Luật giao thông đường bộ năm 2008 quy định như thế nào về tín hiệu đèn giao thông? Mức xử phạt vi phạm hành chính đối với người điều khiển phương tiện không chấp hành tín hiệu đèn giao thông được quy định như thế nào?,"- quy định
 - tín hiệu
 - đèn giao thông
 - xử phạt
 - vi phạm
 - người điều khiển
 - không chấp hành"
+100,"Chủ xe mô tô, ô tô tự ý đổi màu sơn xe bị xử phạt như thế nào?","- chủ
+- xe
+- mô tô
+- ô tô
+- đổi màu
+- sơn xe
+- xử phạt"
