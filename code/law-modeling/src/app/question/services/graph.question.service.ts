@@ -12,7 +12,7 @@ export class GraphQuestionService {
             UNWIND $keyphrases as keyphrase
             MERGE (key: Keyphrase {content: toLower(trim(keyphrase))})
             MERGE (q: Question {no: toInteger($no), content: $content})
-            MERGE (q)-[:HAS]-(key)
+            MERGE (q)-[:HAS_KEYPHRASE]-(key)
             RETURN q
         `, {
             no: question.no,

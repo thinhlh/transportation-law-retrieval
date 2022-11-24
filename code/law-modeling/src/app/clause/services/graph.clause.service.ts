@@ -17,7 +17,8 @@ export class GraphClauseService {
             `
             MATCH (article: Article)
             WHERE id(article) = $articleId
-            MERGE (clause: Clause {content: $content, index: toInteger($index)}) <-[:HAS]-(article)
+            MERGE (clause: Clause {content: $content, index: toInteger($index)})
+            MERGE (clause)<-[:HAS_CLAUSE]-(article)
             RETURN id(clause) as id
             `,
             {

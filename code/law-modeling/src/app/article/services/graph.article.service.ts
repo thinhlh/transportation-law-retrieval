@@ -15,7 +15,8 @@ export class GraphArticleService {
     async createArticle(createArtcleDTO: CreateArticleDto): Promise<any> {
         const result = await this.neo4jService.write(`
         MATCH(document: Document {code: $documentId})
-        MERGE (article: Article {index: toInteger($index), title: $title, content: $content}) <-[:HAS]-(document)
+        MERGE (article: Article {index: toInteger($index), title: $title, content: $content})
+        MERGE (article)<-[:HAS_ARTICLE]-(document)
         RETURN id(article) as id`,
             {
                 title: createArtcleDTO.title,
