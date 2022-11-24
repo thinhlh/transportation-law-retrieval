@@ -12,6 +12,7 @@ services:
   neo4j:
     image: neo4j
     container_name: law-modeling-graph
+
     ports:
       - 7474:7474
       - 7473:7473
@@ -22,6 +23,11 @@ services:
     #   - ./env/dev.env
     # volumes:
     #   - ./data:/data
+    volumes:
+      - ./docker/graph/plugins:/var/lib/neo4j/plugins
+      - ./docker/graph/data:/data/rdf
+    command: ["echo","dbms.unmanaged_extension_classes=n10s.endpoint=/rdf",">>","/var/lib/neo4j/conf/neo4j.conf","&&","neo4j", "restart"]
+
 
   cache:
     image: redis

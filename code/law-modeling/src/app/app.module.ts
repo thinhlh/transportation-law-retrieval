@@ -1,9 +1,8 @@
 import { Module, OnApplicationBootstrap } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { readFile } from "fs";
+import { createReadStream, readFile } from "fs";
 import { Neo4jModule } from "nest-neo4j/dist";
-import { doc } from "prettier";
 import { ArticleModule } from "./article/article.module";
 import { RDBArticleService } from "./article/services/rdb.article.service";
 import { CreateArticleDto } from "./article/dto/create-article.dto";
@@ -15,9 +14,14 @@ import { RDBDocumentService } from "./document/services/rdb.document.service";
 import { PointModule } from "./point/point.module";
 import { QueryModule } from "./query/query.module";
 import { GraphArticleService } from "./article/services/graph.article.service";
+import { CsvModule, CsvParser, ParsedData } from "nest-csv-parser";
+import { Question } from "./question/question.entity";
+import { QuestionModule } from "./question/question.module";
+import { GraphQuestionService } from "./question/services/graph.question.service";
 
 @Module({
   imports: [
+    CsvModule,
     ConfigModule.forRoot({
       envFilePath: './env/dev.env',
       isGlobal: true,
@@ -40,40 +44,66 @@ import { GraphArticleService } from "./article/services/graph.article.service";
       username: process.env.GRAPH_USER,
       password: process.env.GRAPH_PASSWORD,
     }),
+
     ArticleModule,
     ClauseModule,
     DocumentModule,
     PointModule,
     QueryModule,
+    QuestionModule,
   ],
 })
 export class AppModule implements OnApplicationBootstrap {
   constructor(
+    private readonly csvParser: CsvParser,
     private readonly documentService: RDBDocumentService,
     private readonly graphDocumentService: GraphDocumentService,
     private readonly articleService: RDBArticleService,
     private readonly graphArticleService: GraphArticleService,
+    private readonly graphQuestionService: GraphQuestionService,
   ) { }
 
   async onApplicationBootstrap() {
     readFile('./src/data/documents.json', 'utf-8', async (err, data) => {
       const documents: CreateDocumentDTO[] = JSON.parse(data)
-      documents.forEach(async (document) => {
+
+      for (const document of documents) {
         await this.graphDocumentService.createDocument(document)
         await this.documentService.createDocument(document)
-      })
+      }
 
-      readFile('./src/data/articles.json', 'utf-8', (err, data) => {
+      readFile('./src/data/articles.json', 'utf-8', async (err, data) => {
         const articles: CreateArticleDto[] = JSON.parse(data)
 
-        articles.forEach(async (article) => {
+        for (const article of articles) {
           await this.graphArticleService.createArticle(article)
           await this.articleService.createArticle(article)
-        })
+        }
       })
+
+      await this.readQuestions();
+
+      console.log('Done')
     })
+  }
+  async readQuestions() {
+    const stream = createReadStream('./resources/keyphrase-extraction.csv')
+    const parsedData: ParsedData<any> = await this.csvParser.parse(stream, Question, null, null, { strict: false, separator: ',' });
 
+    const questions = parsedData
+      .list
+      .map<Question>(
+        (data) => ({
+          keyphrases: (data.Keyphrase as string).split('\n').map((keyphrase) => keyphrase.replace('-', '').trim()),
+          no: data.No,
+          content: data.Question
+        })
+      )
 
-    // this.documentService.createDocument()
+    for (const question of questions) {
+      await this.graphQuestionService.createQuestion(question);
+    }
   }
 }
+
+
