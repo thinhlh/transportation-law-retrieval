@@ -1,73 +1,40 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Task Report
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Đã làm
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- [x] Thu thập các câu hỏi và rút trích keyphrases bằng tàng các câu hỏi đó (~100 câu)
+- [x] Tìm hiểu về KGE và ampligraph.
 
-## Description
+=> Mục tiêu: Tìm ra phương pháp để so khớp 2 đồ thị keyphrase => từ đó đưa ra xếp hạng kết quả
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+> Ampligraph chủ yếu là đánh giá và xếp hạng dựa trên các triple đã có sẵn `(C,R,C)` Vì thế nó không phù hợp khi bài toán yêu cầu đưa ra kết quả điều luật phù hợp.
 
-## Installation
+> Từ đó, việc sử dụng ampligraph hiện tại vẫn chưa mang lại hiệu quả. Khi so sánh hai graph với nhau thay vì là 2 node trong cùng 1 graph
 
-```bash
-$ npm install
-```
+## Đang làm
 
-## Running the app
+> Sử dụng thư viện spacy
 
-```bash
-# development
-$ npm run start
+- [x] Sử dụng thư viện spacy để so khớp đoạn văn bản với nhau, Từ đó đưa ra similarity giữa 2 câu. Độ chính xác tương đối.
+- [x] Để sử dụng spacy hiệu quả và các thư viện graph khác, cần 1 graph database để truy vấn => `NEO4J (Hiện tại khoảng 591 Node & 844 Relations)`
+- [ ] Tuy nhiên spacy chỉ hỗ trợ tiếng anh chứ chưa có tiếng việt
+- [ ] Sử dụng pyvi để làm tiếng việt cho spacy. Hiện tại đã có thể so khớp 2 câu đơn giản với nhau. Tuy nhiên chưa ổn vì pretrained model là cho cho news thay vì law
+- [ ] Có thể sẽ sử dụng model pretrain khác
+  - [ ] Nếu không có model law đã pretraind => Tiến hành tự train
+  - [ ] Nếu không ổn có thể sử dụng so khớp các từ trong đồ thị keyphrase theo cách anh Dương
+- [ ] Từ keyphrase => Tiến hành gắn tag và phân loại từ keyphrase
+  > Một số keyphrase là tổ hợp của nhiều loại từ và phủ định. Ví dụ: người - điều khiển,
+  > không - chấp hành. Cần gộp các keyphrase này lại thay vì tách tiêng
 
-# watch mode
-$ npm run start:dev
+## Sẽ làm
 
-# production mode
-$ npm run start:prod
-```
+- [ ] Tiếp tục làm tiếp rút trích keyphrase lên các câu hỏi
+- [ ] Tìm hiểu về 1 số KGE lib khác
 
-## Test
+---
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+<details>
+<summary>Note</summary>
+> Note: Trong keyphrase extraction.csv, từ câu 59->73 nằm ở trang [này](http://tuphapdienban.gov.vn/2021/09/22/hoi-dap-phap-luat-ve-luat-giao-thong-duong-bo/)
+> Từ câu 74 -> 104 nằm ở trang [này](https://hoatieu.vn/tai-lieu/cau-hoi-tim-hieu-luat-giao-thong-duong-bo-127936)
+</details>

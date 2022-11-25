@@ -11,7 +11,8 @@ export class GraphPointService {
         await this.neo4jService.write(`
                     MATCH (clause: Clause)
                     WHERE id(clause) = $clauseId
-                    MERGE (point: Point {content: $content, index: $index}) <-[:HAS]-(clause)
+                    MERGE (point: Point {content: $content, index: $index}) 
+                    MERGE (point)<-[:HAS_POINT]-(clause)
                     `, {
             clauseId: clauseId,
             content: createPointDTO.content,

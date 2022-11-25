@@ -15,7 +15,8 @@ export class GraphArticleService {
     async createArticle(createArtcleDTO: CreateArticleDto): Promise<any> {
         const result = await this.neo4jService.write(`
         MATCH(document: Document {code: $documentId})
-        MERGE (article: Article {index: $index, title: $title, content: $content}) <-[:HAS]-(document)
+        MERGE (article: Article {index: toInteger($index), title: $title, content: $content})
+        MERGE (article)<-[:HAS_ARTICLE]-(document)
         RETURN id(article) as id`,
             {
                 title: createArtcleDTO.title,
@@ -24,10 +25,11 @@ export class GraphArticleService {
                 documentId: createArtcleDTO.documentId
             })
 
-        result.records.forEach((record => {
-            createArtcleDTO.clauses.forEach(async (clause) => {
+
+        for (const record of result.records) {
+            for (const clause of createArtcleDTO.clauses) {
                 await this.graphClauseService.createClause(clause, record.get('id').low)
-            });
-        }))
+            }
+        }
     }
 }

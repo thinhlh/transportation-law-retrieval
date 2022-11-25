@@ -12,16 +12,21 @@ services:
   neo4j:
     image: neo4j
     container_name: law-modeling-graph
+
     ports:
       - 7474:7474
       - 7473:7473
       - 7687:7687
     environment:
       - NEO4J_AUTH=none
-    # env_file:
-    #   - ./env/dev.env
-    # volumes:
-    #   - ./data:/data
+    env_file:
+      - ./env/dev.env
+    volumes:
+      - ./docker/graph/plugins:/var/lib/neo4j/plugins
+      - ./docker/graph/data:/data/rdf
+      - ./docker/graph/config/apoc.conf:/var/lib/neo4j/conf/apoc.conf
+      # - ./docker/graph/conf:/var/lib/neo4j/conf
+
 
   cache:
     image: redis

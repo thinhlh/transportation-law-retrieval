@@ -13,11 +13,12 @@ export class GraphClauseService {
     ) { }
 
     async createClause(createClauseDTO: CreateClauseDTO, articleId: number): Promise<any> {
-        const clauseCreateResult = await this.neo4jService.write(
+        const result = await this.neo4jService.write(
             `
             MATCH (article: Article)
             WHERE id(article) = $articleId
-            MERGE (clause: Clause {content: $content, index: $index}) <-[:HAS]-(article)
+            MERGE (clause: Clause {content: $content, index: toInteger($index)})
+            MERGE (clause)<-[:HAS_CLAUSE]-(article)
             RETURN id(clause) as id
             `,
             {
@@ -25,13 +26,10 @@ export class GraphClauseService {
                 content: createClauseDTO.content,
                 index: createClauseDTO.index,
             });
-
-
-
-        clauseCreateResult.records.forEach((clauseResult) => {
-            createClauseDTO.points.forEach(async (point) => {
-                await this.graphPointService.createPoint(point, clauseResult.get('id').low)
-            })
-        });
+        for (const record of result.records) {
+            for (const point of createClauseDTO.points) {
+                await this.graphPointService.createPoint(point, record.get('id').low)
+            }
+        }
     };
 }
