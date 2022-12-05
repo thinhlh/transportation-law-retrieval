@@ -21,182 +21,189 @@
     "clauses": [
       {
         "index": "1",
-        "title": "Đường bộ gồm đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ.",
-        "content": "",
+        "content": "Đường bộ gồm đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ",
         "points": []
       },
       {
         "index": "2",
-        "title": "Công trình đường bộ gồm đường bộ, nơi dừng xe, đỗ xe trên đường bộ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường, cọc tiêu, rào chắn, đảo giao thông, dải phân cách, cột cây số, tường, kè, hệ thống thoát nước, trạm kiểm tra tải trọng xe, trạm thu phí và các công trình, thiết bị phụ trợ đường bộ khác.",
-        "content": "",
+        "content": "Công trình đường bộ gồm đường bộ, nơi dừng xe, đỗ xe trên đường bộ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường, cọc tiêu, rào chắn, đảo giao thông, dải phân cách, cột cây số, tường, kè, hệ thống thoát nước, trạm kiểm tra tải trọng xe, trạm thu phí và các công trình, thiết bị phụ trợ đường bộ khác",
         "points": []
       },
       {
         "index": "3",
-        "title": "Kết cấu hạ tầng giao thông đường bộ gồm công trình đường bộ, bến xe, bãi đỗ xe, trạm dừng nghỉ và các công trình phụ trợ khác trên đường bộ phục vụ giao thông và hành lang an toàn đường bộ.",
-        "content": "",
+        "content": "Kết cấu hạ tầng giao thông đường bộ gồm công trình đường bộ, bến xe, bãi đỗ xe, trạm dừng nghỉ và các công trình phụ trợ khác trên đường bộ phục vụ giao thông và hành lang an toàn đường bộ",
         "points": []
       },
       {
         "index": "4",
-        "title": "Đất của đường bộ là phần đất trên đó công trình đường bộ được xây dựng và phần đất dọc hai bên đường bộ để quản lý, bảo trì, bảo vệ công trình đường bộ.",
-        "content": "",
+        "content": "Đất của đường bộ là phần đất trên đó công trình đường bộ được xây dựng và phần đất dọc hai bên đường bộ để quản lý, bảo trì, bảo vệ công trình đường bộ",
         "points": []
       },
       {
         "index": "5",
-        "title": "Hành lang an toàn đường bộ là dải đất dọc hai bên đất của đường bộ, tính từ mép ngoài đất của đường bộ ra hai bên để bảo đảm an toàn giao thông đường bộ.",
-        "content": "",
+        "content": "Hành lang an toàn đường bộ là dải đất dọc hai bên đất của đường bộ, tính từ mép ngoài đất của đường bộ ra hai bên để bảo đảm an toàn giao thông đường bộ",
         "points": []
       },
       {
         "index": "6",
-        "title": "Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông qua lại.",
-        "content": "",
+        "content": "Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông qua lại",
+
         "points": []
       },
       {
         "index": "7",
-        "title": "Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
-        "content": "",
+        "content": "Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn",
+
         "points": []
       },
       {
         "index": "8",
-        "title": "Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.",
-        "content": "",
+        "content": "Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn",
+
         "points": []
       },
       {
         "index": "9",
-        "title": "Dải phân cách là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ. Dải phân cách gồm loại cố định và loại di động.",
-        "content": "",
+        "content": "Đường phố là đường đô thị, gồm lòng đường và hè phố",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "10",
+        "content": "Dải phân cách là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "11",
+        "content": "Nơi đường giao nhau cùng mức (sau đây gọi là nơi đường giao nhau) là nơi hai hay nhiều đường bộ gặp nhau trên cùng một mặt phẳng, gồm cả mặt bằng hình thành vị trí giao nhau đó",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "12",
+        "content": "Đường cao tốc là đường dành cho xe cơ giới, có dải phân cách chia đường cho xe chạy hai chiều riêng biệt; không giao nhau cùng mức với một hoặc các đường khác; được bố trí đầy đủ trang thiết bị phục vụ, bảo đảm giao thông liên tục, an toàn, rút ngắn thời gian hành trình và chỉ cho xe ra, vào ở những điểm nhất định",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "13",
+        "content": "Đường chính là đường bảo đảm giao thông chủ yếu trong khu vực",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "14",
+        "content": "Đường nhánh là đường nối vào đường chính",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "15",
+        "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "16",
+        "content": "Đường gom là đường để gom hệ thống đường giao thông nội bộ của các khu đô thị, công nghiệp, kinh tế, dân cư, thương mại - dịch vụ và các đường khác vào đường chính hoặc vào đường nhánh trước khi đấu nối vào đường chính",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "17",
+        "content": "Phương tiện giao thông đường bộ gồm phương tiện giao thông cơ giới đường bộ, phương tiện giao thông thô sơ đường bộ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "18",
+        "content": "Phương tiện giao thông cơ giới đường bộ (sau đây gọi là xe cơ giới) gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy (kể cả xe máy điện) và các loại xe tương tự",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "19",
+        "content": "Phương tiện giao thông thô sơ đường bộ (sau đây gọi là xe thô sơ) gồm xe đạp (kể cả xe đạp máy), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "20",
+        "content": "Xe máy chuyên dùng gồm xe máy thi công, xe máy nông nghiệp, lâm nghiệp và các loại xe đặc chủng khác sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "21",
+        "content": "Phương tiện tham gia giao thông đường bộ gồm phương tiện giao thông đường bộ và xe máy chuyên dùng",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "22",
+        "content": "Người tham gia giao thông gồm người điều khiển, người sử dụng phương tiện tham gia giao thông đường bộ; người điều khiển, dẫn dắt súc vật; người đi bộ trên đường bộ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "23",
+        "content": "Người điều khiển phương tiện gồm người điều khiển xe cơ giới, xe thô sơ, xe máy chuyên dùng tham gia giao thông đường bộ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "24",
+        "content": "Người lái xe là người điều khiển xe cơ giới",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "25",
+        "content": "Người điều khiển giao thông là cảnh sát giao thông; người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "26",
+        "content": "Hành khách là người được chở trên phương tiện vận tải hành khách đường bộ, có trả tiền",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "27",
+        "content": "Hành lý là vật phẩm mà hành khách mang theo trên cùng phương tiện hoặc gửi theo phương tiện khác",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "28",
+        "content": "Hàng hóa là máy móc, thiết bị, nguyên vật liệu, nhiên liệu, hàng tiêu dùng, động vật sống và các động sản khác được vận chuyển bằng phương tiện giao thông đường bộ",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "29",
+        "content": "Hàng nguy hiểm là hàng hóa có chứa các chất nguy hiểm khi chở trên đường có khả năng gây nguy hại tới tính mạng, sức khỏe con người, môi trường, an toàn và an ninh quốc gia",
+
         "points": []
       },
       {
-        "index": "2",
-        "title": "",
-        "content": "",
+        "index": "30",
+        "content": "Vận tải đường bộ là hoạt động sử dụng phương tiện giao thông đường bộ để vận chuyển người, hàng hóa trên đường bộ",
+
+        "points": []
+      },
+      {
+        "index": "31",
+        "content": "Người vận tải là tổ chức, cá nhân sử dụng phương tiện giao thông đường bộ để thực hiện hoạt động vận tải đường bộ",
+
+        "points": []
+      },
+      {
+        "index": "32",
+        "content": "Cơ quan quản lý đường bộ là cơ quan thực hiện chức năng quản lý nhà nước chuyên ngành thuộc Bộ Giao thông vận tải; cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương (sau đây gọi chung là cấp tỉnh), Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh (sau đây gọi chung là cấp huyện); Ủy ban nhân dân xã, phường, thị trấn (sau đây gọi chung là cấp xã)",
+
         "points": []
       }
     ]
@@ -977,11 +984,11 @@
     "title": " Xử phạt người điều khiển xe mô tô, xe gắn máy (kể cả xe máy điện), các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy vi phạm quy tắc giao thông đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây:",
-    "clause": [
+    "clauses": [
       {
         "index": "1",
         "content": "Phạt tiền từ 100.000 đồng đến 200.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây",
-        "point": [
+        "points": [
           {
             "index": "a",
             "content": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm c, điểm đ, điểm e, điểm h khoản 2; điểm d, điểm g, điểm i, điểm m khoản 3; điểm a, điểm b, điểm c, điểm d, điểm e khoản 4; khoản 5; điểm b khoản 6; điểm a, điểm b khoản 7; điểm d khoản 8 Điều này;"
@@ -1051,7 +1058,7 @@
       {
         "index": "2",
         "content": "Phạt tiền từ 200.000 đồng đến 300.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây:",
-        "point": [
+        "points": [
           {
             "index": "a",
             "content": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường;"
