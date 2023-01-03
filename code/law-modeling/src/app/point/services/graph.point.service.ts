@@ -8,15 +8,31 @@ export class GraphPointService {
     constructor(private readonly neo4jService: Neo4jService) { }
 
     async createPoint(createPointDTO: CreatePointDTO, clauseId: number) {
-        await this.neo4jService.write(`
+
+        const result = await this.neo4jService.write(
+            `
                     MATCH (clause: Clause)
                     WHERE id(clause) = $clauseId
+
                     MERGE (point: Point {content: $content, index: $index}) 
                     MERGE (point)<-[:HAS_POINT]-(clause)
-                    `, {
+
+                    WITH point
+
+                    FOREACH(
+                        keyphrase in $keyphrases | 
+                        MERGE (key: Keyphrase {content: toLower(trim(keyphrase))})
+                    )
+
+                    RETURN id(point)
+                    
+            `, {
+            keyphrases: createPointDTO.keyphrases,
             clauseId: clauseId,
             content: createPointDTO.content,
             index: createPointDTO.index
         });
+
+        return
     }
 }

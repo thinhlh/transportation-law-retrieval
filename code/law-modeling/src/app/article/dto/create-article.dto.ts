@@ -5,5 +5,6 @@ export class CreateArticleDto {
     title: string
     content: string
     documentId: string
+    keyphrases: string[]
     clauses: CreateClauseDTO[] = []
 }

@@ -1,10 +1,13 @@
 [
   {
     "code": "100/2019/NĐ-CP",
-    "title": "NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ VÀ ĐƯỜNG SẮT"
+    "title": "NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ VÀ ĐƯỜNG SẮT",
+
+    "keyphrases": ["XỬ PHẠT", "VI PHẠM", "ĐƯỜNG BỘ", "ĐƯỜNG SẮT"]
   },
   {
     "code": "23/2008/QH12",
-    "title": "LUẬT GIAO THÔNG ĐƯỜNG BỘ"
+    "title": "LUẬT GIAO THÔNG ĐƯỜNG BỘ",
+    "keyphrases": ["LUẬT", "ĐƯỜNG BỘ"]
   }
 ]
