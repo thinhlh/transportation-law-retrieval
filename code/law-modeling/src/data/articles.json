@@ -2464,7 +2464,16 @@
     "title": "Xử phạt các hành vi vi phạm quy định về sử dụng, khai thác trong phạm vi đất dành cho đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "sử dụng",
+      "khai thác",
+      "phạm vi đất",
+      "đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -2716,7 +2725,16 @@
     "title": "Xử phạt các hành vi vi phạm quy định về thi công, bảo trì công trình trong phạm vi đất dành cho đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "thi công",
+      "bảo trì công trình",
+      "phạm vi đất",
+      "đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -2842,7 +2860,16 @@
     "title": "Xử phạt các hành vi vi phạm về xây dựng bến xe, bãi đỗ xe, trạm dừng nghỉ, trạm thu phí đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "xây dựng",
+      "bến xe",
+      "bãi đỗ xe",
+      "trạm dừng nghỉ",
+      "trạm thu phí đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -2885,12 +2912,29 @@
     "title": "Xử phạt các hành vi vi phạm quy định về quản lý, khai thác, bảo trì, bảo vệ kết cấu hạ tầng giao thông đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "quản lý",
+      "khai thác",
+      "bảo trì",
+      "bảo vệ",
+      "kết cấu hạ tầng",
+      "giao thông đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
         "content": "Cảnh cáo hoặc phạt tiền từ 60.000 đồng đến 100.000 đồng đối với cá nhân thực hiện một trong các hành vi vi phạm sau đây:",
-        "keyphrases": [],
+        "keyphrases": [
+          "Cảnh cáo",
+          "phạt tiền",
+          "cá nhân",
+          "hành vi",
+          "vi phạm"
+        ],
         "points": [
           {
             "index": "a",
@@ -3105,7 +3149,17 @@
     "title": "Xử phạt người điều khiển xe ô tô (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo) và các loại xe tương tự xe ô tô vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "rơ moóc",
+      "các loại xe tương tự xe ô tô",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "phương tiện"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3297,7 +3351,19 @@
     "title": "Xử phạt người điều khiển xe mô tô, xe gắn máy (kể cả xe máy điện), các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe mô tô",
+      "xe gắn máy",
+      "xe máy điện",
+      "các loại xe tương tự xe mô tô",
+      "các loại xe tương tự xe gắn máy",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "phương tiện"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3424,7 +3490,15 @@
     "title": "Xử phạt người điều khiển xe thô sơ vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe thô sơ",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "phương tiện"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3456,7 +3530,17 @@
     "title": "Xử phạt người điều khiển máy kéo (kể cả rơ moóc được kéo theo), xe máy chuyên dùng vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "máy kéo",
+      "rơ moóc",
+      "xe máy chuyên dùng",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "phương tiện"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3567,7 +3651,17 @@
     "title": "Xử phạt người điều khiển xe ô tô, máy kéo và các loại xe tương tự xe ô tô vi phạm quy định về bảo vệ môi trường khi tham gia giao thông",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "máy kéo",
+      "các loại xe tương tự xe ô tô",
+      "vi phạm",
+      "quy định",
+      "bảo vệ",
+      "môi trường"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3628,7 +3722,15 @@
     "title": "Xử phạt các hành vi vi phạm quy định về điều kiện của người điều khiển xe cơ giới",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "người điều khiển",
+      "xe cơ giới"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3808,7 +3910,15 @@
     "title": "Xử phạt các hành vi vi phạm quy định về điều kiện của người điều khiển xe máy chuyên dùng",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "điều kiện",
+      "người điều khiển",
+      "xe máy chuyên dùng"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -3850,7 +3960,17 @@
     "title": "Xử phạt người điều khiển xe ô tô chở hành khách, ô tô chở người và các loại xe tương tự xe ô tô chở hành khách, chở người vi phạm quy định về vận tải đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "chở hành khách",
+      "các loại xe tương tự xe ô tô chở hành khách",
+      "vi phạm",
+      "quy định",
+      "vận tải",
+      "đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4155,7 +4275,19 @@
     "title": "Xử phạt người điều khiển xe ô tô tải, máy kéo (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo) và các loại xe tương tự xe ô tô vận chuyển hàng hóa vi phạm quy định về vận tải đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "máy kéo",
+      "rơ moóc",
+      "sơ mi rơ moóc",
+      "các loại xe tương tự xe ô tô vận chuyển hàng hóa",
+      "vi phạm",
+      "quy định",
+      "vận tải",
+      "đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4382,7 +4514,16 @@
     "title": "Xử phạt người điều khiển xe ô tô thực hiện hành vi vi phạm quy định về vận chuyển hàng siêu trường, siêu trọng",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "vận chuyển",
+      "hàng siêu trường siêu trọng"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4463,7 +4604,17 @@
     "title": "Xử phạt người điều khiển xe ô tô thực hiện hành vi vi phạm quy định về vận chuyển chất gây ô nhiễm môi trường, hàng nguy hiểm",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe ô tô",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "vận chuyển",
+      "chất gây ô nhiễm môi trường",
+      "hàng nguy hiểm"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4507,7 +4658,18 @@
     "title": "Xử phạt người điều khiển xe vệ sinh môi trường, xe ô tô chở phế thải, vật liệu rời và xe chở hàng khác thực hiện hành vi vi phạm quy định về hoạt động vận tải trong đô thị",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "người điều khiển",
+      "xe vệ sinh môi trường",
+      "xe ô tô chở phế thải",
+      "xe chở hàng",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "vận tải",
+      "đô thị"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4528,7 +4690,15 @@
     "title": "Xử phạt các hành vi vi phạm quy định về vận tải đường bộ, dịch vụ hỗ trợ vận tải đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "vi phạm",
+      "quy định",
+      "vận tải",
+      "đường bộ",
+      "dịch vụ hỗ trợ"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -4981,7 +5151,15 @@
     "title": "Xử phạt hành vi sản xuất, lắp ráp trái phép phương tiện giao thông cơ giới đường bộ; sản xuất, bán biển số phương tiện giao thông cơ giới đường bộ trái phép",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "hành vi",
+      "sản xuất",
+      "lắp ráp",
+      "trái phép",
+      "phương tiện giao thông cơ giới đường bộ",
+      "bán biển số"
+    ],
     "clauses": [
       {
         "index": 1,
@@ -5014,7 +5192,13 @@
     "title": "Xử phạt chủ phương tiện vi phạm quy định liên quan đến giao thông đường bộ",
     "documentId": "100/2019/NĐ-CP",
     "content": "",
-    "keyphrases": [],
+    "keyphrases": [
+      "Xử phạt",
+      "chủ phương tiện",
+      "vi phạm",
+      "quy định",
+      "giao thông đường bộ"
+    ],
     "clauses": [
       {
         "index": 1,

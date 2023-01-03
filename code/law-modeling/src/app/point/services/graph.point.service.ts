@@ -32,7 +32,7 @@ export class GraphPointService {
             content: createPointDTO.content,
             index: createPointDTO.index
         });
-
+        console.log(createPointDTO.index)
         return
     }
 }
