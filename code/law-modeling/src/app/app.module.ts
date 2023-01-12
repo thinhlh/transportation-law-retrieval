@@ -74,8 +74,7 @@ export class AppModule implements OnApplicationBootstrap {
 
       readFile('./src/data/articles.json', 'utf-8', async (err, data) => {
         const articles: CreateArticleDto[] = JSON.parse(data)
-
-        for (const article of articles) {
+        for await (const article of articles) {
           await this.graphArticleService.createArticle(article)
           await this.articleService.createArticle(article)
         }
@@ -83,7 +82,7 @@ export class AppModule implements OnApplicationBootstrap {
 
       await this.readQuestions();
 
-      console.log('Done')
+      console.log('Load data finished')
     })
   }
   async readQuestions() {

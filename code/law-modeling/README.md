@@ -2,7 +2,10 @@
 
 ## Đã làm
 
-- [x] Thu thập các câu hỏi và rút trích keyphrases bằng tàng các câu hỏi đó (~100 câu)
+- [x] Thu thập các câu hỏi và rút trích keyphrases bằng tàng các câu hỏi đó.
+- Có 2 loại chính:
+  - Xử phạt (phạt, mức phạt)
+  - Quy định (nguyên tắc, hành vi)
 - [x] Tìm hiểu về KGE và ampligraph.
 
 => Mục tiêu: Tìm ra phương pháp để so khớp 2 đồ thị keyphrase => từ đó đưa ra xếp hạng kết quả
@@ -26,10 +29,23 @@
   > Một số keyphrase là tổ hợp của nhiều loại từ và phủ định. Ví dụ: người - điều khiển,
   > không - chấp hành. Cần gộp các keyphrase này lại thay vì tách tiêng
 
+## Mục tiêu hiện tại
+
+- Phân tích tương đồng giữa các đồ thị keyphrase.
+
+1. So sánh đồ thị Keyphrase của câu hỏi và đồ thị keyphrase của điều luật trong DB
+
+- Hiện tại đang sử dụng phương pháp đánh trọng số
+- Sử dụng networkX
+
+2. Lưu giá trị/vector của điều luật trong DB và so sánh độ tương đồng giữa 2 vector
+
+- Cần tìm ra phương pháp embedding các đồ thị keyphrase
+
 ## Sẽ làm
 
 - [ ] Tiếp tục làm tiếp rút trích keyphrase lên các câu hỏi
-- [ ] Tìm hiểu về 1 số KGE lib khác
+- [ ] Tìm hiểu về 1 số KGE lib khác để so sánh các đồ thị keyphrase
 
 ---
 

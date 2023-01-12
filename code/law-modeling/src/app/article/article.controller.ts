@@ -4,12 +4,14 @@ import { Request } from "express";
 import { Article } from "./article.entity";
 import { RDBArticleService } from "./services/rdb.article.service";
 import { CreateArticleDto } from "./dto/create-article.dto";
+import { GraphArticleService } from "./services/graph.article.service";
 
 @Controller()
 export class ArticleController {
 
     constructor(
         private readonly articleService: RDBArticleService,
+        private readonly graphArticleServide: GraphArticleService,
     ) {
 
     }
