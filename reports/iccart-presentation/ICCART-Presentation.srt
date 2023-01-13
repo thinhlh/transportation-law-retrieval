@@ -1,0 +1,358 @@
+﻿1
+00:00:00,065 --> 00:00:00,989
+It is 11st January
+
+2
+00:00:00,989 --> 00:00:02,144
+2023
+
+3
+00:00:02,144 --> 00:00:04,454
+and you are watching the research paper
+
+4
+00:00:04,454 --> 00:00:06,434
+presentation at ICARRT.
+
+5
+00:00:06,434 --> 00:00:11,186
+We are a group of four authors represent
+for University of Information Technology.
+
+6
+00:00:11,186 --> 00:00:13,694
+Nowadays, almost every adult has their own
+
+7
+00:00:13,694 --> 00:00:16,763
+vehicle,
+especially in developing countries.
+
+8
+00:00:16,763 --> 00:00:18,842
+In 2022, there are millions
+
+9
+00:00:18,842 --> 00:00:22,835
+traffic law violations,
+with more than 14,000 traffic accidents
+
+10
+00:00:22,934 --> 00:00:26,894
+resulted in roughly
+6,500 deaths and a vast injured people.
+
+11
+00:00:26,894 --> 00:00:28,016
+The reason for this case
+
+12
+00:00:28,016 --> 00:00:31,514
+is that citizens have incredibly low
+awareness of the traffic regulations.
+
+13
+00:00:32,273 --> 00:00:34,682
+Moreover,
+there are thousands of traffic rules
+
+14
+00:00:34,682 --> 00:00:36,332
+that could be challenging for drivers
+
+15
+00:00:36,332 --> 00:00:40,193
+readers to gain a deep understanding
+about transportation law
+
+16
+00:00:40,193 --> 00:00:43,757
+with a strong desire to support citizens
+in achieving fundamental knowledge
+
+17
+00:00:43,757 --> 00:00:45,605
+about law, concepts and penalties.
+
+18
+00:00:45,605 --> 00:00:48,542
+We propose a paper Ontology-based solution
+for building
+
+19
+00:00:48,542 --> 00:00:51,578
+an intelligent searching system
+on traffic law documents.
+
+20
+00:00:51,578 --> 00:00:54,449
+Our primary mission is to design a system
+that has the ability
+
+21
+00:00:54,449 --> 00:00:58,244
+to search for penalties, fines
+and concepts for road traffic offences.
+
+22
+00:00:58,244 --> 00:01:00,092
+based on the questions given by users.
+
+23
+00:01:01,148 --> 00:01:03,689
+Here are the features of our system.
+
+24
+00:01:03,689 --> 00:01:04,778
+Q&A System.
+
+25
+00:01:04,778 --> 00:01:07,319
+We will collect the questions from the users and return a list of articles 
+
+26
+00:01:07,319 --> 00:01:10,718
+based on their ranking in similarity
+with the queries extensibility,
+
+27
+00:01:10,817 --> 00:01:13,754
+we developed a subsystem
+that could extract and retrieve knowledge
+
+28
+00:01:13,754 --> 00:01:15,899
+from law documents and questions
+automatically.
+
+29
+00:01:16,493 --> 00:01:19,595
+This would lead
+the intelligent keeps learning over time.
+
+30
+00:01:19,595 --> 00:01:20,717
+Usability
+
+31
+00:01:20,717 --> 00:01:23,225
+Our model propose
+a high usability since the content
+
+32
+00:01:23,225 --> 00:01:24,413
+is served over the internet
+without any further installation
+
+33
+00:01:24,413 --> 00:01:26,954
+is served over the internet
+without any further installation
+
+34
+00:01:26,954 --> 00:01:28,703
+in order to achieve the requirements,
+
+35
+00:01:28,703 --> 00:01:32,267
+we have adopted Traffic-Rela model
+based on the rela model.
+
+36
+00:01:32,267 --> 00:01:34,874
+It is an effective ontology
+for representing the knowledge
+
+37
+00:01:34,874 --> 00:01:38,603
+of relations in legal domain
+and is a combination of three components.
+
+38
+00:01:38,603 --> 00:01:40,682
+Let's dive into this model.
+
+39
+00:01:40,682 --> 00:01:44,675
+The Traffic-Rela model has the following
+structure C, R and Rules.
+
+40
+00:01:45,203 --> 00:01:47,480
+C is a set of concepts in traffic domain.
+
+41
+00:01:48,008 --> 00:01:51,407
+R Is the set of relations between concepts
+or fact rules.
+
+42
+00:01:51,407 --> 00:01:52,859
+Represents the inference rules
+
+43
+00:01:52,859 --> 00:01:56,060
+to specify the relation between concepts
+and penalties.
+
+44
+00:01:56,060 --> 00:01:56,852
+Concept
+
+45
+00:01:56,852 --> 00:02:01,769
+Each C and concept has the structure, name
+meaning, attributes and keywords.
+
+46
+00:02:01,934 --> 00:02:04,112
+Name is the name of the concept.
+
+47
+00:02:04,112 --> 00:02:06,224
+Meaning is the meaning of the concept
+
+48
+00:02:06,224 --> 00:02:09,227
+Attributes is a list of attributes of concept
+
+49
+00:02:09,227 --> 00:02:12,164
+Keywords is a list of keywords
+related to the concept.
+
+50
+00:02:12,659 --> 00:02:18,071
+For example, the concept Electric
+Motorcycle will be described as follow
+
+51
+00:02:18,071 --> 00:02:19,688
+Relation
+
+52
+00:02:19,688 --> 00:02:22,625
+Each relations between concepts in R has the structure
+
+53
+00:02:22,625 --> 00:02:25,892
+name, conc, meaning, props and keywords.
+
+54
+00:02:25,892 --> 00:02:28,004
+Name is the name of the relation.
+
+55
+00:02:28,004 --> 00:02:31,139
+Conc is a list of parameters
+as concepts of the relation.
+
+56
+00:02:31,700 --> 00:02:34,010
+Meaning is the meaning of the relation.
+
+57
+00:02:34,010 --> 00:02:36,287
+Props are the properties of relations.
+
+58
+00:02:36,287 --> 00:02:39,191
+Keywords
+a list of keywords of the relation.
+
+59
+00:02:39,191 --> 00:02:43,547
+Take this comply relation as the example.
+
+60
+00:02:43,547 --> 00:02:47,605
+Rules each rule are in rules
+as the form u(r)->v(r).
+
+61
+00:02:47,737 --> 00:02:49,552
+Where u(r) is the hypothesis facts
+
+62
+00:02:49,552 --> 00:02:53,050
+and v(r) is the result of rule r
+
+63
+00:02:53,050 --> 00:02:55,393
+rules could be the combination
+of two different rules types
+
+64
+00:02:55,393 --> 00:02:56,845
+infer and offence
+
+65
+00:02:56,845 --> 00:03:00,838
+rule infer is a set of rules
+inferring the relation between concepts.
+
+66
+00:03:00,838 --> 00:03:04,303
+Rule offences is a set of rules
+determining the offences and penalties.
+
+67
+00:03:04,501 --> 00:03:07,966
+Following is our searching system
+on the traffic knowledge domain developed
+
+68
+00:03:07,966 --> 00:03:09,088
+based on the model described
+
+69
+00:03:09,088 --> 00:03:10,243
+To begin with,
+
+70
+00:03:10,309 --> 00:03:13,312
+user will start by entering
+traffic questions.
+
+71
+00:03:13,312 --> 00:03:16,711
+These queries will be extracted,
+classified and augmented before
+
+72
+00:03:16,711 --> 00:03:19,384
+transmitted to the traffic law model.
+
+73
+00:03:19,384 --> 00:03:22,288
+This model will combine processed keywords
+along with knowledge
+
+74
+00:03:22,288 --> 00:03:25,753
+base collected from documents and lawyers
+to return relevant raw results.
+
+75
+00:03:25,918 --> 00:03:27,733
+It then will ranking these raw results
+
+76
+00:03:27,733 --> 00:03:30,835
+and transform to readable response
+before return to the users.
+
+77
+00:03:31,726 --> 00:03:33,772
+Here is our example
+for the searching system
+
+78
+00:03:33,772 --> 00:03:37,336
+with different types of queries
+in realistic.
+
+79
+00:03:38,623 --> 00:03:42,055
+Thank you for your watching
+and see you in the next videos.
