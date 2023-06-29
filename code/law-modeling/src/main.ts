@@ -42,7 +42,4 @@ async function documentingApp(app: INestApplication) {
 
 }
 
-
-
-
 bootstrap();
